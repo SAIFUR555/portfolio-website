@@ -3,163 +3,298 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Sayed Saifur Rahman | Portfolio</title>
+
+  <meta 
+    name="description" 
+    content="Portfolio of Sayed Saifur Rahman, a Computer Science and Engineering student interested in backend development, web applications, database systems, and ASP.NET Core MVC." 
+  />
+
+  <meta 
+    name="keywords" 
+    content="Sayed Saifur Rahman, Backend Developer, Web Developer, CSE Student, PHP, MySQL, ASP.NET Core MVC, Portfolio" 
+  />
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
+  <!-- Header Start -->
   <header>
     <nav class="navbar">
-      <h2 class="logo">Saifur</h2>
+      <a href="#home" class="logo">Saifur Rahman<span>.</span></a>
 
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievement" class="nav-link">Achievement</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
-      <button id="darkModeBtn">Dark</button>
+      <div class="nav-actions">
+        <button id="darkModeBtn" aria-label="Toggle dark mode">Dark</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      </div>
     </nav>
   </header>
+  <!-- Header End -->
 
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h1>Hello, I am <span>Sayed Saifur Rahman</span></h1>
-      <p>B.Sc. in Computer Science & Engineering</p>
-      <p>Backend Developer | Web Application Developer | Database Enthusiast</p>
-      <a href="#projects" class="btn">View My Projects</a>
-    </div>
 
-    <div class="hero-image">
-      <img src="images/profile.png" alt="Sayed Saifur Rahman profile photo" />
-    </div>
-  </section>
+  <!-- Hero Start -->
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="intro">Hello, I am</p>
 
+        <h1>Sayed Saifur Rahman</h1>
+
+        <h3>B.Sc. in Computer Science & Engineering</h3>
+
+        <p class="hero-description">
+          Backend Developer, Web Application Developer, and Database Enthusiast.
+          I enjoy building practical software solutions using PHP, MySQL,
+          ASP.NET Core MVC, C#, JavaScript, and modern development tools.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary-btn">View Projects</a>
+          <a href="files/Sayed_Saifur_Rahman_CV.pdf" class="btn secondary-btn" download>
+            Download CV
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/SAIFUR555" target="_blank">GitHub</a>
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="mailto:saifurrahmans306@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/profile.png" alt="Profile photo of Sayed Saifur Rahman" />
+      </div>
+    </section>
+  </main>
+  <!-- Hero End -->
+
+
+  <!-- About Start -->
   <section id="about">
     <h2>About Me</h2>
-    <p>
-      I am a Computer Science & Engineering student at American International University-Bangladesh.
-      I am passionate about backend development, web application development, database systems,
-      and software engineering. I enjoy building practical software solutions using PHP, MySQL,
-      ASP.NET Core MVC, C#, JavaScript, and other modern technologies.
-    </p>
-  </section>
 
+    <div class="about-content">
+      <p>
+        I am a Computer Science & Engineering student at American International
+        University-Bangladesh. I am passionate about backend development,
+        web application development, database systems, and software engineering.
+      </p>
+
+      <p>
+        My goal is to build efficient, user-friendly, and scalable software
+        solutions. I have experience working with PHP, MySQL, ASP.NET Core MVC,
+        C#, JavaScript, and database-driven applications.
+      </p>
+    </div>
+  </section>
+  <!-- About End -->
+
+
+  <!-- Education Start -->
   <section id="education">
     <h2>Education</h2>
 
-    <div class="info-card">
-      <h3>American International University-Bangladesh</h3>
-      <p>B.Sc. in Computer Science & Engineering</p>
-      <p>CGPA: 3.64</p>
-      <p>Sep 2022 – Present</p>
-    </div>
+    <div class="timeline">
 
-    <div class="info-card">
-      <h3>BCIC School and College</h3>
-      <p>Higher Secondary Certificate</p>
-      <p>GPA: 5.00/5.00</p>
-      <p>2019 – 2021</p>
+      <div class="timeline-card">
+        <span class="year">Sep 2022 – Present</span>
+        <h3>American International University-Bangladesh</h3>
+        <p>B.Sc. in Computer Science & Engineering</p>
+        <p><strong>CGPA:</strong> 3.64</p>
+        <p>Dhaka, Bangladesh</p>
+      </div>
+
+      <div class="timeline-card">
+        <span class="year">2019 – 2021</span>
+        <h3>BCIC School and College</h3>
+        <p>Higher Secondary Certificate</p>
+        <p><strong>GPA:</strong> 5.00/5.00</p>
+        <p>Dhaka, Bangladesh</p>
+      </div>
+
     </div>
   </section>
+  <!-- Education End -->
 
+
+  <!-- Skills Start -->
   <section id="skills">
     <h2>Technical Skills</h2>
 
-    <div class="skills-container">
-      <div class="skill-box">PHP</div>
-      <div class="skill-box">Java</div>
-      <div class="skill-box">C#</div>
-      <div class="skill-box">C++</div>
-      <div class="skill-box">Python</div>
-      <div class="skill-box">HTML</div>
-      <div class="skill-box">CSS</div>
-      <div class="skill-box">JavaScript</div>
-      <div class="skill-box">MySQL</div>
-      <div class="skill-box">SQL Server</div>
-      <div class="skill-box">ASP.NET Core MVC</div>
-      <div class="skill-box">Git & GitHub</div>
+    <div class="skills-category">
+      <h3>Programming Languages</h3>
+      <div class="skills-container">
+        <span>PHP</span>
+        <span>Java</span>
+        <span>C#</span>
+        <span>C</span>
+        <span>C++</span>
+        <span>Python</span>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3>Web Technologies</h3>
+      <div class="skills-container">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>ASP.NET Core MVC</span>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3>Database & Tools</h3>
+      <div class="skills-container">
+        <span>MySQL</span>
+        <span>SQL Server</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>VS Code</span>
+        <span>Visual Studio</span>
+        <span>XAMPP</span>
+        <span>Selenium WebDriver</span>
+      </div>
     </div>
   </section>
+  <!-- Skills End -->
 
+
+  <!-- Projects Start -->
   <section id="projects">
     <h2>Projects</h2>
 
     <div class="project-container">
 
-      <div class="project-card">
+      <article class="project-card">
         <h3>LearnHub</h3>
+        <p class="project-type">Course Selling & Buying Platform</p>
         <p><strong>Technology:</strong> PHP, MySQL, MVC, JavaScript</p>
         <p>
-          A course selling and buying platform with student registration,
-          course management, CRUD operations, profile image upload, and validation.
+          Developed a course selling and buying platform with student registration,
+          course management, CRUD operations, profile image upload, and secure validation.
         </p>
-      </div>
+        <div class="project-links">
+          <a href="#" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Live Demo</a>
+        </div>
+      </article>
 
-      <div class="project-card">
+      <article class="project-card">
         <h3>FacultyConnect</h3>
+        <p class="project-type">Faculty Slot Management System</p>
         <p><strong>Technology:</strong> PHP, MySQL, JavaScript, Python, Selenium</p>
         <p>
-          A faculty slot management system where students can book consultation time slots
-          with authentication, validation, and access control.
+          Built an appointment booking system where students can reserve faculty
+          consultation slots with authentication, validation, and access control.
         </p>
-      </div>
+        <div class="project-links">
+          <a href="#" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Live Demo</a>
+        </div>
+      </article>
 
-      <div class="project-card">
+      <article class="project-card">
         <h3>Library Management System</h3>
+        <p class="project-type">Desktop Application</p>
         <p><strong>Technology:</strong> C#, Windows Forms, SQL</p>
         <p>
-          A desktop application for managing book inventory, issue records,
+          Created a desktop application to manage book inventory, issue records,
           return records, search, and filtering features.
         </p>
-      </div>
+        <div class="project-links">
+          <a href="#" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Live Demo</a>
+        </div>
+      </article>
 
-      <div class="project-card">
+      <article class="project-card">
         <h3>Clinical Queue Management System</h3>
+        <p class="project-type">Clinic Appointment & Smart Queue System</p>
         <p><strong>Technology:</strong> ASP.NET Core MVC, C#, SQL Server</p>
         <p>
-          A clinic appointment and smart queue management system with patient management,
-          doctor scheduling, appointment booking, and queue tracking.
+          Developed a clinic appointment and queue management system with patient
+          management, doctor scheduling, appointment booking, and queue tracking.
         </p>
-      </div>
+        <div class="project-links">
+          <a href="#" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Live Demo</a>
+        </div>
+      </article>
 
     </div>
   </section>
+  <!-- Projects End -->
 
+
+  <!-- Achievement Start -->
   <section id="achievement">
     <h2>Achievement</h2>
 
-    <div class="info-card">
+    <div class="achievement-card">
       <h3>Winner – AIUB SPARK Competition</h3>
       <p>1st Position, Project Innovation Category</p>
+      <p>
+        Secured first position in the Project Innovation Category among
+        university-level participants.
+      </p>
     </div>
   </section>
+  <!-- Achievement End -->
 
+
+  <!-- Contact Start -->
   <section id="contact">
     <h2>Contact Me</h2>
 
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <div class="contact-wrapper">
 
-    <div class="contact-info">
-      <p>Email: saifurrahmans306@gmail.com</p>
-      <p>Phone: +8801676212777</p>
-      <p>Location: Mirpur, Dhaka, Bangladesh</p>
-      <p>GitHub: SAIFUR555</p>
-      <p>LinkedIn: Sayed Saifur Rahman</p>
+      <div class="contact-info">
+        <h3>Let’s Connect</h3>
+        <p>
+          I am open to internship opportunities, software development projects,
+          and collaboration.
+        </p>
+
+        <p><strong>Email:</strong> saifurrahmans306@gmail.com</p>
+        <p><strong>Phone:</strong> +8801676212777</p>
+        <p><strong>Location:</strong> Mirpur, Dhaka, Bangladesh</p>
+        <p><strong>GitHub:</strong> SAIFUR555</p>
+        <p><strong>LinkedIn:</strong> Sayed Saifur Rahman</p>
+      </div>
+
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
     </div>
   </section>
+  <!-- Contact End -->
 
+
+  <!-- Footer Start -->
   <footer>
     <p>© 2026 Sayed Saifur Rahman. All Rights Reserved.</p>
   </footer>
+  <!-- Footer End -->
+
 
   <script src="js/app.js"></script>
 </body>
